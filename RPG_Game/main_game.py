@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 
 import random
 import time
@@ -19,11 +20,10 @@ def GameLoop():
         if win == True:
             pass
     print("\n\t\tGAME OVER\n")
-    
-   
+
+
 try:
-    GameLoop()   
+    GameLoop()
 except KeyboardInterrupt: # If CTRL+C is pressed, exit cleanly:
     print ("\t\tGoodbye\n")
-
 
