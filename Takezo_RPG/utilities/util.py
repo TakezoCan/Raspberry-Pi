@@ -2,7 +2,7 @@
 
 
 def cls(lines=100):
- 
+
     if os.name == "posix":
         os.system("clear")
 
@@ -14,7 +14,7 @@ def cls(lines=100):
 
 
 
-def yesOrNo(prompt = " (Y/N)? >> "):
+def yesOrNo(prompt = " (Y/N)? >> "): # get user response "Yes" or "No"
     while True:
         answer = input(prompt)
         answer = answer.strip()
@@ -29,4 +29,3 @@ def yesOrNo(prompt = " (Y/N)? >> "):
             return False
         else:
             continue
-

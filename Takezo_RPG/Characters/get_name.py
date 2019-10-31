@@ -8,8 +8,8 @@ def nameInput(prompt):
 def getName():
     tempName = ""
     while True:
-        tempName = nameInput("\nWhat is your name? >> ")
-        
+        tempName = nameInput("\nWhat is your name? >> ") # go to 'nameInput' (line 3) and recieve user name
+
         if len(tempName) <= 1:
             print("Name is too short...")
             continue
@@ -17,6 +17,6 @@ def getName():
         yes = util.yesOrNo(tempName + ", is that your name? (Y/N) >> ")
 
         if yes:
-            return tempName
+            return tempName # Returns players name to intro.py line 59 - getname()
         else:
             continue
